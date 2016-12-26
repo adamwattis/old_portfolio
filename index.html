@@ -21,7 +21,7 @@
         <div class="header__image">
           <img src="/images/profilepic.JPG" style="height: 126px; width: 126px; border-radius:100%;" alt="Profile Picture">
         </div>
-        <div class="header__text">…I’m an aspiring entrepeneur and freelance full-stack web dev from Stockholm, Sweden currently based in State College, PA.<br><br>I enjoy science, building stuff, business and security.</div>  
+        <div class="header__text">…I’m an aspiring entrepeneur and freelance full-stack web dev from Stockholm, Sweden currently based in State College, PA.<br><br>I enjoy science, building stuff, business and opsec.</div>  
       </div>
       <div class="header__menu">
           <button id="projectsButton" class="header__button--active">Projects</button>
@@ -40,7 +40,7 @@
           <div class="projects">
 
             <!--Project Objects-->
-            <div class="project">
+            <a href="http://www.utopia.ventures/" class="project">
               <div class="project__image">
                 <img src="/images/utopiawebsitenew.jpg">
               </div>
@@ -50,7 +50,19 @@
               <div class="project__text">
                 Projects that impact people, planet and profit.
               </div>
-            </div>
+            </a>
+            <a href="http://www.petersenphoto.se/" class="project">
+              <div class="project__image">
+                <img src="/images/WebsiteJesper.jpg">
+              </div>
+              <div class="project__title">
+                Petersen Photo
+              </div>
+              <div class="project__text">
+                Photographer Jesper Petersen's website.
+              </div>
+            </a>
+            
           </div>
         </div>
         <div id="contact" style="display: none">
@@ -59,15 +71,19 @@
           <hr>
 
           <!--Contact-->
-          <div class="medium-text">I sometimes write articles on Medium. Follow me.</div>
-          <div class="medium-container">
+          <div class="medium-text">I sometimes write articles on Medium.</div>
+            <a class="medium-container" href="https://medium.com/@adamwattis">
             <img class="medium" src="/images/medium.png">
-          </div>
+            </a>
+          <div class="medium-text">GitHub profile</div>
+            <a class="medium-container" href="https://github.com/adamwattis/">
+            <img class="medium" src="/images/github-icon.png">
+            </a>
           <div>Write me a message.</div>
-          <form class="contact__form">
-            <input class="contact__email" type="email" placeholder="Your email">
-            <textarea class="contact__message" rows="5" placeholder="Your message to me"></textarea>
-            <button class="contact__button" type="submit">Send</button>
+          <form class="contact__form" action="https://formspree.io/contact@adamwattis.com" method="POST">
+            <input class="contact__email" type="email" placeholder="Your email" name="_replyto">
+            <textarea class="contact__message" name="message" rows="5" placeholder="Your message to me"></textarea>
+            <button class="contact__button" type="submit" value="Send">Send</button>
           </form>
         </div>
       </div>

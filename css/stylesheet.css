@@ -90,6 +90,7 @@ body {
 .project {
   width: 50%;
   margin: 15px;
+  color: black;
 }
 
 .project__image>img {
