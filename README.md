@@ -3,7 +3,7 @@
 
 This is a quick version of my personal profile website.
 
-URL: adamwattis.com
+URL: <a href="http://adamwattis.com/">adamwattis.com</a>
 
 <h2>TODO:</h2>
 - Fix smoother downsizing of content on mobile devices.
