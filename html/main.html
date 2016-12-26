@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Adam Wattis</title>
+    <meta name="author" content="Adam Wattis">
+    <meta name="description" content="Adam Wattis website">
+    <meta name="keywords" content="adamwattis, adam wattis, AdamWattis, Adam Wattis, adam, wattis">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap-flex.min.css" type="text/css">
+    <link rel="stylesheet" href="/css/stylesheet.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+  </head>
+  <body>
+    <!--Header with navigation buttons-->
+    <div class="header">
+      <!--This was the easiest way to make the transparent overlay-->
+      <div class="header__wrapper">
+      <div class="header__title">Hello, my name is Adam Wattis...</div>
+      <div class="header__container">
+        <div class="header__image">
+          <img src="/images/profilepic.JPG" style="height: 126px; width: 126px; border-radius:100%;" alt="Profile Picture">
+        </div>
+        <div class="header__text">…I’m an aspiring entrepeneur and freelance full-stack web dev from Stockholm, Sweden currently based in State College, PA.<br><br>I enjoy science, building stuff, business and security.</div>  
+      </div>
+      <div class="header__menu">
+          <button id="projectsButton" class="header__button--active">Projects</button>
+          <button id="contactButton" class="header__button">Contact</button>
+      </div>
+    </div>
+    </div>  
+    <div class="content">
+      <div class="content__container">
+      <!--Content will be displayed here: Projects or Contact-->
+
+        <div id="projects">
+          
+          <div class="content__title">Projects</div>
+          <hr>
+          <div class="projects">
+
+            <!--Project Objects-->
+            <div class="project">
+              <div class="project__image">
+                <img src="/images/utopiawebsitenew.jpg">
+              </div>
+              <div class="project__title">
+                Utopia Ventures
+              </div>
+              <div class="project__text">
+                Projects that impact people, planet and profit.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="contact" style="display: none">
+          
+          <div class="content__title">Contact</div>
+          <hr>
+
+          <!--Contact-->
+          <div class="medium-text">I sometimes write articles on Medium. Follow me.</div>
+          <div class="medium-container">
+            <img class="medium" src="/images/medium.png">
+          </div>
+          <div>Write me a message.</div>
+          <form class="contact__form">
+            <input class="contact__email" type="email" placeholder="Your email">
+            <textarea class="contact__message" rows="5" placeholder="Your message to me"></textarea>
+            <button class="contact__button" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
